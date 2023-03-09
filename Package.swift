@@ -17,6 +17,11 @@ let package = Package(
     dependencies: [
     ],
     targets: [
-      .binaryTarget(name: "opencv2", path: "opencv2.xcframework")
+      //.binaryTarget(name: "opencv2", path: "opencv2.xcframework")
+      .binaryTarget(
+        name: "opencv2",
+        url: "https://github.com/richardfanson/opencv2/tree/main/opencv2.xcframework.zip",
+        checksum: "3c082ad7ea515466257a44b5a9b845f6b93de02c8d91522d43c924207479f71b"
+      )
     ]
 )
